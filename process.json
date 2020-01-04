@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "my-utils",
+      "script": "app.js",
+      "env": {
+        "PORT": 8888
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": 8888
+      },
+      "log_date_format"  : "YYYY-MM-DD HH:mm:ss",
+      "out_file": "./logs/automatic-out.log",
+      "error_file": "./logs/automatic-err.log",
+      "merge_logs": true
+    }
+  ]
+}
